@@ -31,9 +31,13 @@ table, th, td {
 .container{
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-
+#centered {
+    text-align: center;
+}
 
 .captions{
     display: flex;
@@ -50,11 +54,21 @@ table, th, td {
     border-style: solid;
 }
 
-.rect:hover {
-    color: yellow;
+.green-rect:hover {
+    fill: yellow;
 }
 
 
-.circle:hover {
-    border-style: solid;
+circle:hover {
+    stroke: black;
+    stroke-width: 5px;
+}
+
+#decoration {
+    display: flex;
+    justify-content: space-between;
+}
+
+#acknowledgements {
+    text-align: center;
 }

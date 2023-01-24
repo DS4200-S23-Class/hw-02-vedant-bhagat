@@ -21,18 +21,18 @@
                   </tr>
                   <tr>
                     <td>UFO sightings</td>
-                    <td><a href="https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download">Link</a></td>
+                    <td><a href="C:\Users\vedan\OneDrive\Desktop\College\Classes\Spring_2023\DS4200\HW2\hw-02-vedant-bhagat\data\UFO.csv" download="UFO.csv">Link</a></td>
                     <td>table</td>
                   </tr>
                   <tr>
                     <td>Google Web</td>
-                    <td><a href="https://snap.stanford.edu/data/web-Google.html">Link</a></td>
+                    <td><a href="C:\Users\vedan\OneDrive\Desktop\College\Classes\Spring_2023\DS4200\HW2\hw-02-vedant-bhagat\data\Google-Web.txt">Link</a></td>
                     <td>network</td>
                   </tr>
                   <tr>
                     <td>Airports</td>
-                    <td><a href="https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true">Link</a></td>
-                    <td>type</td>
+                    <td><a href="C:\Users\vedan\OneDrive\Desktop\College\Classes\Spring_2023\DS4200\HW2\hw-02-vedant-bhagat\data\Airports.csv" download="airports.csv">Link</a></td>
+                    <td>table</td>
                   </tr>
             </table>
         </div>
@@ -40,64 +40,109 @@
             <h1 id="data-types">Data Types</h1>
             <h2 class="dataset">UFO</h2>
             <ul class="dataset">
-                <li>Row date type: item</li>
-                <li></li>
-                <li>city data type:position</li>
+                <li>Row data type: Item</li>
+                <li>Column Data Types:</li>
+                <li>Datetime: Attribute</li>
+                <ul>
+                  <li>Quantitative</li>
+                </ul>
+                <li>City: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>State: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>Country: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>Shape: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>Duration: Attribute</li>
+                <ul>
+                  <li>Quantitative</li>
+                </ul>
               </ul>
             <h2 class="dataset">Airports</h2>
             <ul class="dataset">
-                <li>Row date type: item</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Row data type: Item</li>
+                <li>Column Data Types:</li>
+                <li>Airport name: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>Longitude: Position</li>
+                <li>Latitude: Position</li>
               </ul>
             <h2 class="dataset">Google-Web</h2>
             <ul class="dataset">
-                <li>Row date type: item</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Row data type: Links</li>
+                <li>Column Data Types:</li>
+                <li>FromNodeID: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
+                <li>ToNodeID: Attribute</li>
+                <ul>
+                  <li>Categorical</li>
+                </ul>
               </ul>
         </div>
         <div id="task-abstraction">
-            <h1>Task Abstraction</h1>
+            <h1 id='centered'> Task Abstraction</h1>
             <div class="container">
                 <div class="col">
                     <img class="img" src="img\vis1.png" alt="image">
                     <div class="captions">
-                    <div class="caption">High-level task</div>
-                    <div class="caption">Medium-level task</div>
-                    <div class="caption">Low-level task</div>
-                    <div class="caption">Target</div>
-                </div>
+                    <p class="left-align">
+                    <ul> 
+                      <li>High-level task: consume and present info, the daily average temps are being presented</li>
+                      <li>Medium-level task: Search and lookup since the location is known, and the target is also known as 3 points are highlighted</li>
+                      <li>Low-level task: Query and identify as the points from the last 3 days are in red. </li>
+                      <li>Target: Outliers, as some of the points are emphasized by being colored red. </li>
+                    </ul> 
+                  </p>
                   </div>
+                    
+                </div>
+                  
                   <div class="col">
                     <img class="img" src="img\vis2.png" alt="image">
                     <div class="captions">
-                    <div class="caption">High-level task</div>
-                    <div class="caption">Medium-level task</div>
-                    <div class="caption">Low-level task</div>
-                    <div class="caption">Target</div>
-                </div>
+                    <p class="left-align">
+                    <ul> 
+                      <li>High-level task: consume and present info as the vis is displaying how many times the temperature was above normal</li>
+                      <li>Medium-level task: Search and browse, since the two locations are known, but the target is unkown</li>
+                      <li>Low-level task: Query and compare, as temperatures between the two cities can be compared</li>
+                      <li>Target: Similarity, the 2 graphs are being compared </li>
+                    </ul> 
+                  </p>
                   </div>
+                </div>
               </div>
         </div>
         <div id="decoration">
             <svg width="100" height="100" class="circle">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="green" opacity="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="green" opacity="0.5" class="green-circ"/>
             </svg> 
             <svg width="100" height="100" class="rect">          
-              <rect width="300" height="100"  stroke="green" stroke-width="4" fill="green"/>
+              <rect width="300" height="100"  fill="green" class="green-rect"/>
             </svg> 
             <svg width="100" height="100" class="circle">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="green" opacity="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="green" opacity="0.5" class="green-circ"/>
             </svg> 
             <svg width="100" height="100" class="rect">          
-              <rect width="300" height="100"  stroke="green" stroke-width="4" fill="green"/>
+              <rect width="300" height="100" fill="green" class="green-rect"/>
             </svg> 
             <svg width="100" height="100" class="circle">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="green" opacity="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="green" opacity="0.5" class="green-circ"/>
             </svg> 
         </div>
-        <h2 id="Acknowledgements"></h2>
+        <h2 id="acknowledgements">Acknowledgements</h2>
         <div class="resources">
             <ul class="resources">
                 <li>https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp</li>
