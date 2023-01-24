@@ -1,0 +1,60 @@
+* {
+    font-family: Arial;
+}
+
+.info {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: blue;
+    color: white;
+} 
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+#data-types {
+    text-align: center;
+}
+
+.dataset {
+    text-align: left;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.captions{
+    display: flex;
+    text-align:left;
+    color: rgb(71, 71, 242);
+}
+
+.img{
+    width: 50%;
+    height: auto;
+}
+
+.rect {
+    border-style: solid;
+}
+
+.rect:hover {
+    color: yellow;
+}
+
+
+.circle:hover {
+    border-style: solid;
+}
